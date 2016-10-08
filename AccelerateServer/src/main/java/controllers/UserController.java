@@ -1,4 +1,4 @@
-package nobles.christopher.depulse.controllers;
+package controllers;
 
 import nobles.christopher.depulse.models.UserModel;
 import nobles.christopher.depulse.models.UserResponse;

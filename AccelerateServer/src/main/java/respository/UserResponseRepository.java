@@ -1,4 +1,4 @@
-package nobles.christopher.depulse.respository;
+package respository;
 
 import nobles.christopher.depulse.models.UserResponse;
 import org.springframework.data.repository.CrudRepository;
