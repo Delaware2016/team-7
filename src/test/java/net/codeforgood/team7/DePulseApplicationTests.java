@@ -1,4 +1,4 @@
-package nobles.christopher.depulse;
+package net.codeforgood.team7;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

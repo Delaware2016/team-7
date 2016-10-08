@@ -1,9 +1,4 @@
-package models;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+package net.codeforgood.team7.models;
 
 public class UserModel {
     private String name;

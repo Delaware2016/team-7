@@ -1,6 +1,6 @@
-package respository;
+package net.codeforgood.team7.respository;
 
-import models.UserResponse;
+import net.codeforgood.team7.models.UserResponse;
 import org.springframework.data.repository.CrudRepository;
 
 

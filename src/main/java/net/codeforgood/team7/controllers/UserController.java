@@ -1,8 +1,8 @@
-package controllers;
+package net.codeforgood.team7.controllers;
 
-import models.UserModel;
-import models.UserResponse;
-import respository.UserResponseRepository;
+import net.codeforgood.team7.models.UserModel;
+import net.codeforgood.team7.models.UserResponse;
+import net.codeforgood.team7.respository.UserResponseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

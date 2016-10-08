@@ -4,8 +4,8 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
+// 'starter.net.codeforgood.team7.controllers' is found in net.codeforgood.team7.controllers.js
+angular.module('app', ['ionic', 'app.net.codeforgood.team7.controllers', 'app.routes', 'app.directives','app.services',])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

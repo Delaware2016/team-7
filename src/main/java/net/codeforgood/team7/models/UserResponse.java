@@ -1,4 +1,4 @@
-package models;
+package net.codeforgood.team7.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
