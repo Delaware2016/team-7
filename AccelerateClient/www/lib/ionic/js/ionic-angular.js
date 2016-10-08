@@ -37,7 +37,7 @@ var IonicModule = angular.module('ionic', ['ngAnimate', 'ngSanitize', 'ui.router
  * ![Action Sheet](http://ionicframework.com.s3.amazonaws.com/docs/controllers/actionSheet.gif)
  *
  * @usage
- * To trigger an Action Sheet in your code, use the $ionicActionSheet service in your angular net.codeforgood.team7.controllers:
+ * To trigger an Action Sheet in your code, use the $ionicActionSheet service in your angular controllers:
  *
  * ```js
  * angular.module('mySuperApp', ['ionic'])
@@ -1482,7 +1482,7 @@ function($rootScope, $state, $location, $document, $ionicPlatform, $ionicHistory
  * that when a platform is not iOS or Android, then it'll default to iOS. So if you are
  * developing on a desktop browser, it's going to take on iOS default configs.
  *
- * These configs can be changed using the `$ionicConfigProvider` during the net.codeforgood.team7.configuration phase
+ * These configs can be changed using the `$ionicConfigProvider` during the configuration phase
  * of your app. Additionally, `$ionicConfig` can also set and get config values during the run
  * phase and within the app itself.
  *
@@ -3014,7 +3014,7 @@ IonicModule
  * commonly used in the following situations:
  *
  * - Show more info about the current view
- * - Select a commonly used tool or net.codeforgood.team7.configuration
+ * - Select a commonly used tool or configuration
  * - Present a list of actions to perform inside one of your views
  *
  * Put the content of the popover inside of an `<ion-popover-view>` element.
@@ -8320,7 +8320,7 @@ function($scope, $element, $ionicHistory) {
     if (tabIndex === -1) {
       return;
     }
-    //Use a field like '$tabSelected' so developers won't accidentally set it in net.codeforgood.team7.controllers etc
+    //Use a field like '$tabSelected' so developers won't accidentally set it in controllers etc
     if (tab.$tabSelected) {
       self.deselect(tab);
       //Try to select a new tab if we're removing a tab
@@ -11903,7 +11903,7 @@ IonicModule
  *
  * Note that because we are caching these views, *we aren’t destroying scopes*. Instead, scopes
  * are being disconnected from the watch cycle. Because scopes are not being destroyed and
- * recreated, net.codeforgood.team7.controllers are not loading again on a subsequent viewing. If the app/controller
+ * recreated, controllers are not loading again on a subsequent viewing. If the app/controller
  * needs to know when a view has entered or has left, then view events emitted from the
  * {@link ionic.directive:ionView} scope, such as `$ionicView.enter`, may be useful.
  *
@@ -13517,7 +13517,7 @@ function($compile, $ionicConfig, $ionicBind, $ionicViewSwitcher) {
         $scope.$on('$destroy', function() {
           if (!$scope.$tabsDestroy) {
             // if the containing ionTabs directive is being destroyed
-            // then don't bother going through the net.codeforgood.team7.controllers remove
+            // then don't bother going through the controllers remove
             // method, since remove will reset the active tab as each tab
             // is being destroyed, causing unnecessary view loads and transitions
             tabsCtrl.remove($scope);
@@ -13936,7 +13936,7 @@ function($timeout, $ionicConfig) {
  * left in the DOM, and its scope is disconnected from the `$watch` cycle. When navigating to a
  * view that is already cached, its scope is reconnected, and the existing element, which was
  * left in the DOM, becomes active again. This can be disabled, or the maximum number of cached
- * views changed in {@link ionic.provider:$ionicConfigProvider}, in the view's `$state` net.codeforgood.team7.configuration, or
+ * views changed in {@link ionic.provider:$ionicConfigProvider}, in the view's `$state` configuration, or
  * as an attribute on the view itself (see below).
  *
  * @usage
@@ -13956,7 +13956,7 @@ function($timeout, $ionicConfig) {
  *
  * ## View LifeCycle and Events
  *
- * Views can be cached, which means ***net.codeforgood.team7.controllers normally only load once***, which may
+ * Views can be cached, which means ***controllers normally only load once***, which may
  * affect your controller logic. To know when a view has entered or left, events
  * have been added that are emitted from the view's scope. These events also
  * contain data about the view, such as the title and whether the back button should
@@ -14009,7 +14009,7 @@ function($timeout, $ionicConfig) {
  *
  * Caching can be disabled and enabled in multiple ways. By default, Ionic will
  * cache a maximum of 10 views. You can optionally choose to disable caching at
- * either an individual view basis, or by global net.codeforgood.team7.configuration. Please see the
+ * either an individual view basis, or by global configuration. Please see the
  * _Caching_ section in {@link ionic.directive:ionNavView} for more info.
  *
  * @param {string=} view-title A text-only title to display on the parent {@link ionic.directive:ionNavBar}.

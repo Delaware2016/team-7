@@ -618,7 +618,7 @@ window.ionic.version = '1.2.4';
 
 /* eslint camelcase:0 */
 /**
-  * Simple gesture net.codeforgood.team7.controllers with some common gestures that emit
+  * Simple gesture controllers with some common gestures that emit
   * gesture events.
   *
   * Ported from github.com/EightMedia/hammer.js Gestures - thanks!
@@ -6021,7 +6021,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
       originTop = self.__clientHeight / 2;
     }
 
-    // Limit level according to net.codeforgood.team7.configuration
+    // Limit level according to configuration
     level = Math.max(Math.min(level, self.options.maxZoom), self.options.minZoom);
 
     // Recompute maximum values while temporary tweaking maximum scroll ranges
@@ -6322,7 +6322,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
         // Recompute level based on previous scale and new scale
         level = level / self.__lastScale * scale;
 
-        // Limit level according to net.codeforgood.team7.configuration
+        // Limit level according to configuration
         level = Math.max(Math.min(level, self.options.maxZoom), self.options.minZoom);
 
         // Only do further compution when change happened
@@ -8207,7 +8207,7 @@ ionic.scroll = {
 
   /**
    * The side menu view handles one of the side menu's in a Side Menu Controller
-   * net.codeforgood.team7.configuration.
+   * configuration.
    * It takes a DOM reference to that side menu element.
    */
   ionic.views.SideMenu = ionic.views.View.inherit({

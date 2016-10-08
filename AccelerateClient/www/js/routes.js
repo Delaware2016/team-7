@@ -5,10 +5,10 @@ angular.module('app.routes', [])
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
-  // Each state's controller can be found in net.codeforgood.team7.controllers.js
+  // Each state's controller can be found in controllers.js
   $stateProvider
-
-
+    
+  
 
       .state('menu.home', {
     url: '/home',
@@ -16,16 +16,6 @@ angular.module('app.routes', [])
       'side-menu21': {
         templateUrl: 'templates/home.html',
         controller: 'homeCtrl'
-      }
-    }
-  })
-
-  .state('menu.calendar', {
-    url: '/calendar',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/calendar.html',
-        controller: 'calendarCtrl'
       }
     }
   })
@@ -46,38 +36,60 @@ angular.module('app.routes', [])
     controller: 'menuCtrl'
   })
 
-  .state('menu.login', {
+  .state('login', {
     url: '/login',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/login.html',
-        controller: 'loginCtrl'
-      }
-    }
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
   })
 
-  .state('menu.newUser', {
+  .state('newUser', {
     url: '/newUser',
+    templateUrl: 'templates/newUser.html',
+    controller: 'newUserCtrl'
+  })
+
+  .state('menu.map', {
+    url: '/map',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/newUser.html',
-        controller: 'newUserCtrl'
+        templateUrl: 'templates/map.html',
+        controller: 'mapCtrl'
       }
     }
   })
 
-  .state('menu.myAccount', {
-    url: '/myAccount',
+  .state('menu.userHome', {
+    url: '/userHome',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/myAccount.html',
-        controller: 'myAccountCtrl'
+        templateUrl: 'templates/userHome.html',
+        controller: 'userHomeCtrl'
+      }
+    }
+  })
+
+  .state('menu.categories', {
+    url: '/categories',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/categories.html',
+        controller: 'categoriesCtrl'
+      }
+    }
+  })
+
+  .state('menu.myGroups', {
+    url: '/page11',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/myGroups.html',
+        controller: 'myGroupsCtrl'
       }
     }
   })
 
 $urlRouterProvider.otherwise('/side-menu21/home')
 
-
+  
 
 });
