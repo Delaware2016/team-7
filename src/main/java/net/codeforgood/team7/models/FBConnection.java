@@ -11,8 +11,8 @@ package net.codeforgood.team7.models;
         import java.net.URLEncoder;
 
 public class FBConnection {
-    public static final String FB_APP_ID = "234231262685378";
-    public static final String FB_APP_SECRET = "y2a73dede3n49uid13502f5ab8cdt390";
+    public static final String FB_APP_ID = "310938735945058";
+    public static final String FB_APP_SECRET = "473241b0d9492ab76f7977df0fa04878";
     public static final String REDIRECT_URI = "http://localhost:8080/Facebook_Login/fbhome";
 
     static String accessToken = "";

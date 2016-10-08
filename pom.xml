@@ -47,6 +47,7 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
         </dependency>
+<<<<<<< HEAD
 		<!--  <groupId>meetup-java-client</groupId>
   <artifactId>meetup-java-client</artifactId>
   <packaging>jar</packaging>
@@ -55,6 +56,15 @@
 			<groupId>meetup-java-client</groupId>
 			<artifactId>meetup-java-client</artifactId>
 			<version>1.0</version>
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-facebook</artifactId>
+>>>>>>> 58972051029b9081c8e5aa7b3c49fb8fe46b0b64
 		</dependency>
     </dependencies>
 
