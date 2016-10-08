@@ -36,16 +36,24 @@ angular.module('app.routes', [])
     controller: 'menuCtrl'
   })
 
-  .state('login', {
+  .state('menu.login', {
     url: '/login',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/login.html',
+        controller: 'loginCtrl'
+      }
+    }
   })
 
-  .state('newUser', {
+  .state('menu.newUser', {
     url: '/newUser',
-    templateUrl: 'templates/newUser.html',
-    controller: 'newUserCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/newUser.html',
+        controller: 'newUserCtrl'
+      }
+    }
   })
 
   .state('menu.map', {
