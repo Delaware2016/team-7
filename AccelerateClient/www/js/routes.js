@@ -56,16 +56,6 @@ angular.module('app.routes', ['ngOpenFB'])
     }
   })
 
-  .state('menu.map', {
-    url: '/map',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/map.html',
-        controller: 'mapCtrl'
-      }
-    }
-  })
-
   .state('menu.userHome', {
     url: '/userHome',
     views: {
