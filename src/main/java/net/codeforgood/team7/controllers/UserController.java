@@ -1,8 +1,8 @@
 package controllers;
 
-import nobles.christopher.depulse.models.UserModel;
-import nobles.christopher.depulse.models.UserResponse;
-import nobles.christopher.depulse.respository.UserResponseRepository;
+import models.UserModel;
+import models.UserResponse;
+import respository.UserResponseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
