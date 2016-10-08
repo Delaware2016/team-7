@@ -1,12 +1,8 @@
-<<<<<<< HEAD:AccelerateClient/www/js/controllers.js
+
 angular.module('app.net.codeforgood.team7.controllers', [])
 
-.controller('homeCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-=======
-angular.module('app.controllers', [])
   
 .controller('homeCtrl', ['$scope', '$stateParams', '$http', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
->>>>>>> c12532cce34725a8ae07a266a780ee34a0bfaec2:src/main/resources/static/AccelerateClient/www/js/controllers.js
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $http) {
@@ -24,6 +20,13 @@ function ($scope, $stateParams, $http) {
         "location" : "GMU Aquatic and Fitness Center",
         "time" : "time",
         "rsvp" : "2"
+      },
+      { 
+        "name" : "Delaware Young Professionals",
+        "description" : "Firestone Hangout",
+        "location" : "Firstone Grill",
+        "time" : "time",
+        "rsvp" : "15"
       },
       { 
       	"name" : "Salsa Dancing w/ Lesson",
