@@ -6,6 +6,7 @@ import net.codeforgood.team7.respository.UserResponseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,10 +18,15 @@ public class UserController {
     private UserResponseRepository userResponseRepository;
 
 
-    @RequestMapping(value = "/request", method = RequestMethod.GET)
-    public UserModel selectUserByName() {
+    @RequestMapping(value = "/user/zipcode/{zipcode}", method = RequestMethod.GET)
+    public UserModel selectUserByName(@PathVariable String zipcode) {
         UserModel userModel = new UserModel();
-        userModel.setName("Chris");
+        userModel.setName(zipcode);
+        UserResponse userResponse = new UserResponse();
+        userResponseRepository.findByZipcode(zipcode);
+        userResponseRepository.save(userResponse);
+
+
         return userModel;
     }
 
