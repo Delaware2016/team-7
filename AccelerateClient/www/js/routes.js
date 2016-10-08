@@ -15,7 +15,7 @@ angular.module('app.routes', ['ngOpenFB'])
     views: {
       'side-menu21': {
         templateUrl: 'templates/home.html',
-        controller: 'homeCtrl'
+        controller: 'storeCtrl'
       }
     }
   })
