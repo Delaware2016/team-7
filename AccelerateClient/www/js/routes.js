@@ -1,4 +1,4 @@
-angular.module('app.routes', [])
+angular.module('app.routes', ['ngOpenFB'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -7,8 +7,8 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
+
+
 
       .state('menu.home', {
     url: '/home',
@@ -41,7 +41,7 @@ angular.module('app.routes', [])
     views: {
       'side-menu21': {
         templateUrl: 'templates/login.html',
-        controller: 'loginCtrl'
+        controller: 'homeCtrl'
       }
     }
   })
@@ -96,8 +96,9 @@ angular.module('app.routes', [])
     }
   })
 
+
 $urlRouterProvider.otherwise('/side-menu21/home')
 
-  
+
 
 });
