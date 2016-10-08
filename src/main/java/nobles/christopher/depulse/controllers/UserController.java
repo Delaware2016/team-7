@@ -27,9 +27,9 @@ public class UserController {
     }
 
     @RequestMapping(value = "/request", method = RequestMethod.POST)
-    public ResponseEntity<Iterable<UserModel>> requestDataGet(){
+    public ResponseEntity <Iterable<UserResponse>> requestDataGet(){
         Iterable<UserResponse> responses = userResponseRepository.findAll();
-        return new ResponseEntity<UserModel>(responses, HttpStatus.OK);
+        return new ResponseEntity<>(responses, HttpStatus.OK);
     }
 
 }
