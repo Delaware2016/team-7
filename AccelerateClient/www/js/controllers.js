@@ -45,6 +45,7 @@ angular.module('app.controllers', ['ngOpenFB'])
       $http.get('https://api.meetup.com/Bonefish-Underwater-Hockey-Wilmington-DE?photo-host=public&sig_id=207040943&sig=df4723ed7f9c43c082c6a91cf6b1f8e5bc9cfc4c'
 ).then(function successCallback(response) {
       $scope.first = response;
+      console.log(response);
   }, function errorCallback(response) {
     console.log("something went horribly wrong...")
   });
@@ -54,6 +55,7 @@ angular.module('app.controllers', ['ngOpenFB'])
   url: 'https://api.meetup.com/DelawareYoungProfessionals?photo-host=public&sig_id=207040943&sig=f9c1b0351a2a226cf1ea0287016fceaa3a8ea3b1'
 }).then(function successCallback(response) {
       $scope.second = response;
+      console.log(response);
   }, function errorCallback(response) {
     console.log("something went horribly wrong...")
   })

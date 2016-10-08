@@ -4,26 +4,30 @@
         <ion-list id="home-list10">
             <ion-item class="item-thumbnail-left" id="home-list-item5">
                 <img src="img/arcRxGuUSzKdtXEJ5sgP_global_4507911161.jpeg">
-                <h2>Event 1</h2>
+                <p>
+                	<pre><b>{{first.data.name }}</b></pre><pre><em>{{first.data.city}}, {{second.data.state}}</em></pre><pre>Attendees: {{first.data.members}}</pre>
+        		</p>
             </ion-item>
         </ion-list>
-        {{first}}
+
         
         
-        <button id="home-button8" style="font-weight:300;font-size:-9px;" class="button button-balanced  button-block">I'm in!</button>
+        <button id="home-button8" class="button button-balanced  button-block">I'm in!</button>
         <ion-list id="home-list4">
             <ion-item class="item-thumbnail-left" id="home-list-item6">
                 <img src="img/yAebt2ZTSLiTSgprO90M_600_107459742.jpeg">
-                <h2>Event 2</h2>
-                {{second}}
+                <p>
+                	<pre><b>{{second.data.name }}</b></pre><pre>{{second.data.city}}, {{second.data.state}}</i></pre><pre>Attendees: {{second.status}}</pre>
+        		</p>
             </ion-item>
         </ion-list>
         <button id="home-button9" class="button button-balanced  button-block">I'm in!</button>
         <ion-list id="home-list11">
             <ion-item class="item-thumbnail-left" id="home-list-item7">
                 <img src="img/BlRhLlCTSzqJWRM2dac9_cover_sexysalsa.jpg">
-                <h2>Event 3</h2>
-                {{third}}
+                <p>
+                	<pre><b>{{third.data.name }}</b></pre><pre><i>Philadelphia, {{third.data.state}}</i></pre><pre>Attendees: {{third.data.members}}</pre>
+        		</p>
             </ion-item>
         </ion-list>
         <button id="home-button10" class="button button-balanced  button-block">I'm in!</button>
