@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="depulse" />
         <module name="team-7" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="depulse" target="1.8" />
       <module name="team-7" target="1.8" />
     </bytecodeTargetLevel>
   </component>
